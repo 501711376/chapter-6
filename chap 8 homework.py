@@ -29,3 +29,30 @@ def remove_letter(letter, word):
     return print(new)
 
 remove_letter("o", "bobobo")
+
+#question 3
+
+def count_letters(fruit, letter, start):
+    index = start
+    while index < len(fruit):
+        if fruit[index] == letter:
+            print (index)
+        index += 1
+    return -1
+
+
+def sum_all_evens(lst):
+    even_sum = 0
+    for e in lst:
+        if e % 2 == 0:
+           
+            even_sum = even_sum + e
+
+    return even_sum
+
+
+test_list = [6, 5, 4, 0 , -3]
+print(sum_all_evens(test_list))
+
+testEqual(sum_all_evens([4, -2, 3]), 2)
+testEqual(sum_all_evens([4, 2, 3]), 6)
