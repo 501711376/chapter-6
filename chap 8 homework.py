@@ -1,7 +1,7 @@
 #question 12
 def remove(phrase, word):
-    new = word.replace(phrase, "")
-    return new
+    ab = word.replace(phrase, "")
+    return ab
 
 
 print(remove("apple", "appleee"))
@@ -32,27 +32,23 @@ remove_letter("o", "bobobo")
 
 #question 3
 
-def count_letters(fruit, letter, start):
-    index = start
-    while index < len(fruit):
-        if fruit[index] == letter:
-            print (index)
-        index += 1
+def count_letters(fruit,count):
+    fruit = "banana"
+    count = 0
+    for char in fruit:
+        if char == "a":
+            count += 1
+    print(count)
+
+#question 4
+def count_letters(strng,ch,start=0):
+    ix = start
+    while ix < len(strng):
+        if strng[ix] == ch:
+            return ix
+        ix += 1
     return -1
 
-
-def sum_all_evens(lst):
-    even_sum = 0
-    for e in lst:
-        if e % 2 == 0:
-           
-            even_sum = even_sum + e
-
-    return even_sum
+print(count_letters("banana", "a", 2) == 3)
 
 
-test_list = [6, 5, 4, 0 , -3]
-print(sum_all_evens(test_list))
-
-testEqual(sum_all_evens([4, -2, 3]), 2)
-testEqual(sum_all_evens([4, 2, 3]), 6)
