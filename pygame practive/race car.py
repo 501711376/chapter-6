@@ -47,7 +47,7 @@ def car(x, y):
 
 def things_dodged(count):
     font = pygame.font.SysFont(None, 25)
-    text = font.render("Dodged: "+str(count), True, black)
+    text = font.render("Dodged: "+str(count), True, black cfr55
     gameDisplay.blit(text,(0,0))
 
 
